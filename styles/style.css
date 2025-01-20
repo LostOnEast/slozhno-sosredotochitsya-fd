@@ -1,5 +1,202 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: 'IBM Plex mono', sans-serif;
+  background-color: var(--background-color);
+  background-image: var(--background-image-url);
+  /* object-fit: fill; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+img {
+  object-fit: contain;
+  all: inherit;
+}
+.content {
+  display: grid;
+  background-color: var(--background-color);
+ padding: 10px;
+}
+.content_gallery_item {
+  object-fit:contain;
+  
+}
+.content_gallery {
+  max-width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  padding: 5px;
+}
+.header {
+  display: grid;
+  /* gap: 0px; */
+  padding: 10px;
+  min-height: 668px;
+  align-items: center;
+  position: relative;
+  justify-content: end;
+  align-content: space-evenly;
+}
+
+.decorate_corner::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-right: 1px solid var(--hightlight-color);
+  border-top: 1px solid var(--hightlight-color);  
+}
+.decorate_corner::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-left: 1px solid var(--hightlight-color);
+  border-bottom: 1px solid var(--hightlight-color);  
+}
+.header__record-stamp {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.header__record-stamp::after {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  right: 8px;
+  top: 10px;
+  padding: 5px;
+  background-color: var(--hightlight-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--hightlight-color);
+
+}
+.header__record-stamp::before {
+  content: 'REC';
+  color: var(--hightlight-color);
+  position: absolute;
+  right: 31px;
+  top: 3px;
+}
+.header__theme-menu-list {
+  display: grid;
+  justify-self: end;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.header__theme-menu-button {
+  margin: 10px 0px;
+  padding: 0px 12px 0px 12px;
+  border: none;
+  font: inherit;
+  color: var(--hightlight-color);
+  background-color: transparent;
+  text-transform: lowercase;
+}
+.header__theme-menu-button_active {
+  border: 1px solid var(--hightlight-color);
+}
+.header__title { 
+  font-size: var(--main-title-font-size);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+  text-shadow: 4px 4px 0 var(--hightlight-color);
+
+}
+.title-decor {  
+  color: var(--hightlight-color);
+}
+.subtitle-decor {
+  background-color: var(--hightlight-color);
+  color: black;
+}
+.header__description {
+  
+  display: grid;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.content_article-title {
+  
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+
+}
+.content_article-text {
+ 
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+
+}
+.content_article {
+  display: grid;
+  gap: 20px;
+}
+.article_link {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+
+  text-shadow: 4px 4px 0 var(--hightlight-color);
+}
+.footer {
+  padding: 10px;
+  min-height: 668px;
+  align-items: center;
+  position: relative;
+  justify-content: end;
+  align-content: space-evenly;
+}
+@media (width>= 780px) {
+  .header__description {    
+    grid-template-columns: 1fr 1fr;
+  }
+  .header__description_text {
+    grid-column-start: 2;
+  }
+}
+@media (min-width: 1024px) {
+  /*
+  Стили для устройств, у которых ширина viewport больше или равно 770 пикселей
+  */
+}
+
+
