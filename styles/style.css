@@ -17,30 +17,40 @@ img {
 }
 .content {
   display: grid;
+  gap: 12px;
   background-color: var(--background-color);
- padding: 10px;
+  padding: 10px;
 }
 .content_gallery_item {
   object-fit:contain;
   
+  
 }
 .content_gallery {
   max-width: 100%;
-  display: inline-grid;
+  display: grid;
+  gap: 11px;
   grid-template-columns: 1fr;
-  padding: 5px;
+  /* padding: 0px; */
+  /* margin-bottom: 0px; */
 }
 .header {
   display: grid;
-  /* gap: 0px; */
+  grid-template-rows: repeat(3, 1fr);
+  gap: 38px;
+  margin-bottom: 28px;
   padding: 10px;
-  min-height: 668px;
-  align-items: center;
+  /* min-height: 668px; */
   position: relative;
-  justify-content: end;
-  align-content: space-evenly;
+  justify-content: space-evenly;
+  align-content: stretch;
+  justify-items: end;
+  align-items: center;
 }
-
+.header__theme-menu {
+  margin-top: 35px;
+  margin-right: 0px;
+}
 .decorate_corner::after {
   content: '';
   position: absolute;
@@ -89,7 +99,9 @@ img {
   top: 3px;
 }
 .header__theme-menu-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   justify-self: end;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -98,11 +110,19 @@ img {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  align-content: stretch;
+}
+.header__theme-menu-item {
+  /* margin: 11px 0px 0px 0px; */
+  /* padding: 10px 0px 0px 0px; */
 }
 .header__theme-menu-button {
-  margin: 10px 0px;
-  padding: 0px 12px 0px 12px;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px;
+  padding: 2px 12px 4px 12px;
   border: none;
   font: inherit;
   color: var(--hightlight-color);
@@ -133,14 +153,21 @@ img {
 }
 .header__description {
   
-  display: grid;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
+display: grid;
+  
+padding-bottom: 42px;
+  
+font-size: 18px;
+  
+font-weight: 700;
+  
+line-height: 23.4px;
+  
+text-align: left;
+  
+text-underline-position: from-font;
+  
+text-decoration-skip-ink: none;
 }
 .content_article-title {
   
@@ -163,7 +190,22 @@ img {
 }
 .content_article {
   display: grid;
-  gap: 20px;
+  gap: 21px;
+  margin-bottom: 37px;
+}
+.content_article-section {
+  display: grid;
+  gap: 9px;
+}
+.content_article-subtitle {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
 }
 .article_link {
   font-family: IBM Plex Mono;
@@ -178,8 +220,9 @@ img {
   text-shadow: 4px 4px 0 var(--hightlight-color);
 }
 .footer {
+  display: grid;
   padding: 10px;
-  min-height: 668px;
+  min-height: 623px;
   align-items: center;
   position: relative;
   justify-content: end;
