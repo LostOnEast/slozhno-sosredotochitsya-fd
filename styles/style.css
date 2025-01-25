@@ -191,7 +191,7 @@ text-decoration-skip-ink: none;
 .content_article {
   display: grid;
   gap: 21px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 .content_article-section {
   display: grid;
@@ -222,10 +222,10 @@ text-decoration-skip-ink: none;
 .footer {
   display: grid;
   padding: 10px;
-  min-height: 623px;
+  min-height: 660px;
   align-items: center;
   position: relative;
-  justify-content: end;
+  justify-content: space-around;
   align-content: space-evenly;
 }
 @media (width>= 780px) {
