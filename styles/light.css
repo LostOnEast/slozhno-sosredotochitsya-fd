@@ -16,30 +16,6 @@
   --navigation-menu-hover-color: #32312D66;
 }
 
-.theme-light .header__record-stamp::after {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-.theme-light .header__record-stamp {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
-
 @media (prefers-color-scheme: light) {
 
   :root {
@@ -54,7 +30,32 @@
     --navigation-menu-color: #353430;
     --navigation-menu-hover-color: #32312D66;
   }
-  
+/* скрыть фонарик рядом с REC для светлой темы */
+
+.theme-light .header__record-stamp::after {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* скрыть надпись REC для автоматической светлой темы */
+
+.theme-light .header__record-stamp {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+  /* скрыть фонарик рядом с REC для автоматической светлой темы */
+
   .theme-auto .header__record-stamp::after {
     position: absolute;
     overflow: hidden;
@@ -65,6 +66,8 @@
     white-space: nowrap;
   }
   
+  /* скрыть надпись REC для автоматической светлой темы */
+
   .theme-auto .header__record-stamp {
     position: absolute;
     overflow: hidden;
