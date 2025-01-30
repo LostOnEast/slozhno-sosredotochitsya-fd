@@ -181,6 +181,8 @@
   line-height: 23.4px;
 }
 
+
+
 .content_article-text {
   color: var(--main-text-color);
 
@@ -211,6 +213,10 @@
   text-align: left;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
+}
+
+.subtitle-thin {
+  font-weight: 400;
 }
 
 .content_gallery-list {

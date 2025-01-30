@@ -9,6 +9,9 @@
   --accent-color: #db00ff;
   --background-color: #000028;
   --hightlight-color: #ff0070;
+  --title-text-color: #ff0070;
+  --subtitle-text-color: #000028;
+  --main-text-color: #F1B2CE; 
   --navigation-menu-color: #ff0070;
   --navigation-menu-hover-color: #ff007066;
 }
