@@ -1,9 +1,3 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
   --background-image-url: url(../images/cover-image-dark.png);
   --accent-color: #db00ff;
@@ -11,11 +5,7 @@
   --hightlight-color: #ff0070;
   --title-text-color: #ff0070;
   --subtitle-text-color: #000028;
-  --main-text-color: #F1B2CE; 
+  --main-text-color: #f1b2ce;
   --navigation-menu-color: #ff0070;
   --navigation-menu-hover-color: #ff007066;
-}
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 }

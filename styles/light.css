@@ -6,53 +6,52 @@
 
 :root.theme-light {
   --background-image-url: url(../images/cover-image-light.png);
-  --accent-color: #FFC2E6;
-  --background-color: #FFF1F7;
-  --hightlight-color: #FF8DCB;
+  --accent-color: #ffc2e6;
+  --background-color: #fff1f7;
+  --hightlight-color: #ff8dcb;
   --title-text-color: #353430;
   --subtitle-text-color: #353430;
   --main-text-color: #353430;
   --navigation-menu-color: #353430;
-  --navigation-menu-hover-color: #32312D66;
+  --navigation-menu-hover-color: #32312d66;
 }
 
 @media (prefers-color-scheme: light) {
 
   :root {
-
     --background-image-url: url(../images/cover-image-light.png);
-    --accent-color: #FFC2E6;
-    --background-color: #FFF1F7;
-    --hightlight-color: #FF8DCB;
+    --accent-color: #ffc2e6;
+    --background-color: #fff1f7;
+    --hightlight-color: #ff8dcb;
     --title-text-color: #353430;
     --subtitle-text-color: #353430;
     --main-text-color: #353430;
     --navigation-menu-color: #353430;
-    --navigation-menu-hover-color: #32312D66;
+    --navigation-menu-hover-color: #32312d66;
   }
-/* скрыть фонарик рядом с REC для светлой темы */
+  /* скрыть фонарик рядом с REC для светлой темы */
 
-.theme-light .header__record-stamp::after {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+  .theme-light .header__record-stamp::after {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    inline-size: 1px;
+    block-size: 1px;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 
-/* скрыть надпись REC для автоматической светлой темы */
+  /* скрыть надпись REC для автоматической светлой темы */
 
-.theme-light .header__record-stamp {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+  .theme-light .header__record-stamp {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    inline-size: 1px;
+    block-size: 1px;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 
   /* скрыть фонарик рядом с REC для автоматической светлой темы */
 
@@ -65,7 +64,7 @@
     clip-path: inset(50%);
     white-space: nowrap;
   }
-  
+
   /* скрыть надпись REC для автоматической светлой темы */
 
   .theme-auto .header__record-stamp {
@@ -77,5 +76,4 @@
     clip-path: inset(50%);
     white-space: nowrap;
   }
-  
 }
