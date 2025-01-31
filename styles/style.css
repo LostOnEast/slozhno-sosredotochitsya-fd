@@ -23,6 +23,7 @@
 }
 
 .content_gallery {
+  
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -69,13 +70,14 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
 }
 
 .header__record-stamp::after {
@@ -127,16 +129,17 @@
   background-color: transparent;
   appearance: none;
   cursor: pointer;
+  
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+ outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--navigation-menu-color);
-}
-
+ }
+ 
 .header__theme-menu-button:hover {
   border: 1px solid var(--navigation-menu-hover-color);
 }
@@ -178,10 +181,11 @@
   line-height: 23.4px;
 }
 
-.content_article-container {
+.content_article-container{
   display: grid;
   gap: 20px;
 }
+
 
 .content_article-text {
   color: var(--main-text-color);
@@ -242,12 +246,15 @@
 }
 
 .content_article-gallerytitle {
-  color: var(--subtitle-text-color);
+
+  color: var(--subtitle-text-color); 
+
 }
 
 .article_link {
+  
   text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono',monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
@@ -356,6 +363,7 @@
 
   .content_article-main {
     grid-template-columns: 1fr;
+    
   }
 
   .content_article-container {
@@ -369,7 +377,7 @@
 
   .content_sticky-title {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
   }
 
   .content_article-main > .content_article-section {
@@ -401,11 +409,14 @@
   .img_sunset {
     grid-column: 1 / span 2;
     grid-row: 1;
+    
   }
 
   .img_cream {
     grid-column: 3;
     grid-row: 1 / span 2;
+   
+    
   }
 
   .img_tape {
@@ -466,14 +477,14 @@
     grid-auto-flow: row;
   }
 
-  .content_article-container {
-    grid-template-columns: repeat(3, 1fr);
+  .content_article-container{
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
   }
 
   .content_sticky-title {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
   }
 
   .content_article-section {
