@@ -364,7 +364,6 @@
   }
 
   .content_article-container {
-    /* display: grid; */
     grid-auto-flow: row;
     column-gap: unset;
   }
@@ -381,9 +380,7 @@
   .content_article-main > .content_article-section {
     grid-column: 1;
   }
-
   
-
   .content_gallery-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -490,11 +487,9 @@
   .content_article-section {
     grid-column: unset;
     grid-template-rows: min-content 1fr;
-    /* grid-column: 2 / 4; */
   }
 
   .content_article-main > .content_article-section {
     grid-column: auto;
-    /* grid-row: 2 / 3; */
   }
 }
