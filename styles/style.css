@@ -352,6 +352,7 @@
 
   .content_article-section {
     grid-column: 2;
+    grid-template-rows: min-content 1fr;
   }
 
   .content_article-main {
