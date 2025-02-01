@@ -312,16 +312,16 @@
 
   .header__description {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    column-gap: 10px;
     align-self: center;
     padding-right: 9px;
     padding-bottom: 0;
   }
 
   .header__description_text {
-    grid-column-start: 2;
-    align-self: self-end;
-    height: 100%;
+    grid-column: 2;
+    /* align-self: self-end; */
+    /* height: 100%; */
   }
 
   .decorate_corner::after {
