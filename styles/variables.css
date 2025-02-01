@@ -9,6 +9,7 @@
   --shadow-text-color: #ff0070;
   --navigation-menu-color: #ff0070;
   --navigation-menu-hover-color: #ff007066;
+  --link-in-text-border-color: #f1b2ce;
   --main-title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-title-font-size-desktop: clamp(
     7.5rem,

@@ -266,7 +266,7 @@
 }
 
 .article_link:focus-visible {
-  border: 1px solid var(--navigation-menu-hover-color);
+  border: 1px solid var(--link-in-text-border-color);
 }
 
 .footer {

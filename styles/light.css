@@ -8,6 +8,7 @@
   --main-text-color: #353430;
   --navigation-menu-color: #353430;
   --navigation-menu-hover-color: #32312d66;
+  --link-in-text-border-color: #353430;
 }
 
 .theme-light .header__record-stamp {
@@ -26,6 +27,7 @@
     --main-text-color: #353430;
     --navigation-menu-color: #353430;
     --navigation-menu-hover-color: #32312d66;
+    --link-in-text-border-color: #353430;
   }
   
   .header__record-stamp {
