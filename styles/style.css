@@ -320,8 +320,6 @@
 
   .header__description_text {
     grid-column: 2;
-    /* align-self: self-end; */
-    /* height: 100%; */
   }
 
   .decorate_corner::after {
