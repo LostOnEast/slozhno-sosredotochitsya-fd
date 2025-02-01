@@ -10,3 +10,7 @@
   --navigation-menu-hover-color: #ff007066;
   --link-in-text-border-color: #f1b2ce;
 }
+
+.theme-dark .header__record-stamp {
+  display: flex;
+}
